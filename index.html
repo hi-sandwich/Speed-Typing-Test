@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+  
+<body>
+  
+  <div class="container"> 
+
+    <div class="heading"> <h1> Typing Speed Test </h1></div>
+<div class="header">
+  
+  <div class="wpm"> 
+    <div class="header_text"> WPM </div>
+    <div class="cur_wpm"> 1000 </div> 
+  </div>
+
+    <div class="cpm">
+      <div class="header_text"> CPM </div>
+      <div class="cur_cpm"> 1000 </div>
+    </div>
+
+    <div class="errors"> 
+      <div class="header_text"> Errors </div>
+      <div class="cur_errors"> 0</div>
+    </div>
+    
+    <div class="timer"> 
+      <div class="header_text"> Timer </div>
+      <div class="cur_timer" id="timeShow"> s </div>
+    </div>
+
+    <div class="accuracy">
+      <div class="header_text"> % Accuracy </div>
+      <div class="cur_accuracy"> 100 </div>
+    </div>
+
+    </div> <BR><BR>
+
+  <div class="quote"> Click on the Area below to start the game. </div>
+  <textarea class="input_area" placeholder="Start typing here..." oninput="processCurrentText()" onfocus="startGame()"> </textarea>
+
+  <button type="button" class="restart_button"> <a href=""> Restart </a> </button>
+</div>
+
+  <script src="script.js">
+    
+  </script>
+
+</body>
+</html>
